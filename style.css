@@ -1,20 +1,199 @@
-/* Estilos globales */
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #bae8e8;
+}
+
+.example-class {
+  font-family: 'Edu AU VIC WA NT Hand', cursive;
+}
+
+/*Reseteo*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 header {
-  background-color: #333;
+  background-color: #001e1d;
   color: #fff;
   padding: 1rem;
 }
 
+/* Main*/
+.hero {
+  background: #bae8e8;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/*Logo*/
+
+.logo img {
+  height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+/*Menu Primero , hamburguesa en resistencia*/
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.menu > li {
+  float: left;
+}
+
+.menu a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #111;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+/*Search*/
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-container button {
+  padding: 5px;
+  background-color: #001e1d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/*Login y cesta*/
+.account a {
+  text-decoration: none;
+  color: white;
+}
+
+.account img {
+  height: 30px; /* Ajusta el tamaño según sea necesario */
+}
+
+.cart {
+  position: relative;
+}
+
+.cart img {
+  height: 30px; /* Ajusta el tamaño según sea necesario */
+}
+
+.cart-count {
+  position: relative;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Estilo para los divs de cuenta y cesta */
+.container {
+  display: flex; /* Habilita Flexbox en el contenedor */
+  justify-content: flex-end; /* Alinea los elementos al final del contenedor (a la derecha) */
+  align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+  padding: 10px;
+}
+
+.account {
+  margin-right: 20px;
+}
+
+.account,
+.cart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilo para el icono de la cuenta y la cesta */
+.account img,
+.cart img {
+  width: 24px; /* Ajusta el tamaño del icono */
+  height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Estilo para el conteo en la cesta */
+.cart .cart-count {
+  margin-left: 5px; /* Espacio entre el icono y el conteo */
+  font-size: 14px; /* Tamaño del texto del conteo */
+}
+
+/* Eliminar el subrayado y el color del enlace */
+.cart a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Hereda el color del contenedor, que generalmente es el color del texto por defecto */
+}
+
+/* Opcional: si quieres asegurarte de que el color del enlace sea el mismo que el texto del contenedor */
+.cart a {
+  color: white; /* Puedes cambiar este valor al color deseado */
+}
+
+/* Segundo menu */
 nav ul {
   display: flex;
   justify-content: center;
@@ -30,19 +209,11 @@ nav ul li a {
   text-decoration: none;
 }
 
-.hero {
-  background: #f4f4f4;
-  padding: 2rem;
-  text-align: center;
+strong {
+  color: coral;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
+/*Productos*/
 
 .product-grid {
   display: grid;
@@ -52,7 +223,7 @@ nav ul li a {
 }
 
 .product {
-  background: #fff;
+  background: #faeee7;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
@@ -75,12 +246,14 @@ nav ul li a {
 }
 
 .product a {
-  color: #007bff;
+  color: #078080;
   text-decoration: none;
 }
 
+/*Footer*/
+
 footer {
-  background-color: #333;
+  background-color: #001e1d;
   color: #fff;
   padding: 1rem;
   text-align: center;

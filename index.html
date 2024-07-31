@@ -3,22 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Ficticia</title>
+    <title>CybO</title>
     <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
+      <div class="logo">
+        <img src="ruta-del-logo.png" alt="CybO" />
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Componentes</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Portatiles</a>
+            </li>
+
+            <li><a href="#">Smartphones</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Televisores</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Hogar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar..." />
+        <button type="submit">En todo el catalogo</button>
+      </div>
+      <div class="container">
+        <div class="account">
+          <a href="#login">
+            <img src="ruta-del-icono-cesta.png" alt="Mi cuenta" />
+          </a>
+        </div>
+        <div class="cart">
+          <a href="#cart">
+            <img src="ruta-del-icono-cesta.png" alt="Mi cesta" />
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+      <hr />
       <nav>
         <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#products">Productos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#home">Smartphones con descuento</a></li>
+          <li><a href="#products">Televisores al 50%</a></li>
+          <li><a href="#contact">Outlet</a></li>
+          <li>
+            <a href="#contact"><strong>Especial verano</strong></a>
+          </li>
         </ul>
       </nav>
+      <hr />
     </header>
     <main>
       <section id="home" class="hero">
@@ -26,7 +64,7 @@
         <p>Los mejores productos a los mejores precios</p>
       </section>
       <section id="products">
-        <h2>Nuestros Productos</h2>
+        <h2>DESTACADOS DE LA SEMANA</h2>
         <div class="product-grid">
           <article class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 1" />
@@ -41,6 +79,66 @@
             <a href="#" rel="noopener">Ver más</a>
           </article>
           <!-- Añadir más productos aquí -->
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 3" />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 4" />
+            <h3>Producto 4</h3>
+            <p>Descripción del producto 4</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 5" />
+            <h3>Producto 5</h3>
+            <p>Descripción del producto 5</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 6" />
+            <h3>Producto 6</h3>
+            <p>Descripción del producto 6</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 7" />
+            <h3>Producto 7</h3>
+            <p>Descripción del producto 7</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 8" />
+            <h3>Producto 8</h3>
+            <p>Descripción del producto 8</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 9" />
+            <h3>Producto 9</h3>
+            <p>Descripción del producto 9</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 10" />
+            <h3>Producto 10</h3>
+            <p>Descripción del producto 10</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 10" />
+            <h3>Producto 11</h3>
+            <p>Descripción del producto 11</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
+          <article class="product">
+            <img src="https://via.placeholder.com/200" alt="Producto 10" />
+            <h3>Producto 12</h3>
+            <p>Descripción del producto 12</p>
+            <a href="#" rel="noopener">Ver más</a>
+          </article>
         </div>
       </section>
       <section id="contact">
@@ -52,7 +150,10 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 Tienda Ficticia. Todos los derechos reservados.</p>
+      <p>
+        &copy; 2024 Cybercomputer & Others. CIF B50475310. AVDA Del Tornillo
+        123. Polígono industrial de Las Placas Base, 28170, MADRID. ESPAÑA.
+      </p>
     </footer>
   </body>
 </html>
