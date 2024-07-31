@@ -40,6 +40,10 @@ header {
 
 /*Logo*/
 
+.logo h2 {
+  color: white;
+}
+
 .logo img {
   height: 50px; /* Ajusta el tamaño según sea necesario */
 }
@@ -223,8 +227,8 @@ strong {
 }
 
 .product {
-  background: #faeee7;
-  border: 1px solid #ddd;
+  background: #bae8e8;
+  border: 1px transparent;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
