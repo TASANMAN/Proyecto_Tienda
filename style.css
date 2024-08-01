@@ -251,6 +251,10 @@ strong {
 
 /*Productos*/
 
+#products h2 {
+  padding-left: 30px;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -287,6 +291,14 @@ strong {
 }
 
 /*Footer*/
+
+#contact h2 {
+  padding-left: 30px;
+}
+
+#contact p {
+  padding-left: 30px;
+}
 
 footer {
   background-color: #001e1d;
