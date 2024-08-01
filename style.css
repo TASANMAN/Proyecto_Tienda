@@ -39,13 +39,20 @@ header {
 }
 
 /*Logo*/
+.logo {
+  display: flex;
+  gap: 10px; /* Espacio entre el texto y la imagen */
+  margin-bottom: 20px;
+}
 
 .logo h2 {
-  color: white;
+  margin: 0; /* Elimina el margen predeterminado del h2 */
+  font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
 }
 
 .logo img {
-  height: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 40px; /* Ajusta la altura de la imagen según sea necesario */
+  vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
 }
 
 /*Menu Primero , hamburguesa en resistencia*/
@@ -145,7 +152,6 @@ header {
 }
 
 .cart-count {
-  position: relative;
   top: -10px;
   right: -10px;
   background-color: red;
@@ -153,37 +159,56 @@ header {
   border-radius: 50%;
   padding: 5px 10px;
   font-size: 12px;
+  margin-left: 2px;
 }
 
 /* Estilo para los divs de cuenta y cesta */
 .container {
-  display: flex; /* Habilita Flexbox en el contenedor */
-  justify-content: flex-end; /* Alinea los elementos al final del contenedor (a la derecha) */
-  align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
-  padding: 10px;
-}
-
-.account {
-  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; /* Espacio entre los contenedores */
+  font-size: 14px;
 }
 
 .account,
 .cart {
   display: flex;
-  justify-content: flex-end;
+  align-items: center; /* Alinea los elementos verticalmente en la misma línea */
 }
 
-/* Estilo para el icono de la cuenta y la cesta */
+.account a,
+.cart a {
+  display: flex;
+  align-items: center; /* Alinea los elementos dentro del enlace horizontalmente */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Mantiene el color del texto del contenedor */
+}
+
+.account p,
+.cart p {
+  margin: 0;
+  padding-right: 10px; /* Espacio entre el texto y la imagen */
+}
+
 .account img,
 .cart img {
-  width: 24px; /* Ajusta el tamaño del icono */
-  height: auto; /* Mantiene la proporción del icono */
+  vertical-align: middle; /* Alinea verticalmente las imágenes con el texto */
+  height: 24px; /* Ajusta la altura según sea necesario */
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
 }
 
 /* Estilo para el conteo en la cesta */
 .cart .cart-count {
-  margin-left: 5px; /* Espacio entre el icono y el conteo */
-  font-size: 14px; /* Tamaño del texto del conteo */
+  margin-left: 3px;
+  margin-right: 5px;
+  font-size: 12px; /* Tamaño del texto del conteo */
 }
 
 /* Eliminar el subrayado y el color del enlace */
@@ -195,6 +220,13 @@ header {
 /* Opcional: si quieres asegurarte de que el color del enlace sea el mismo que el texto del contenedor */
 .cart a {
   color: white; /* Puedes cambiar este valor al color deseado */
+}
+
+.account:hover,
+.cart:hover {
+  background-color: #111; /* Cambia el color de fondo cuando se pasa el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+  border-radius: 4px; /* Opcional: agrega bordes redondeados */
 }
 
 /* Segundo menu */
